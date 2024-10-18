@@ -15,6 +15,7 @@ header {
     background-color: #FF69B4;
     display: flex;
     justify-content: space-around;
+    
 
     nav{
         //  border: solid green;
@@ -34,12 +35,24 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media (max-width:650px){
+            border: solid red;
+            width: 50vw;
+        }
     }
     
     li{
         font-weight: 400;
         color: #E4EEF1;
         font-size: 28px;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            font-size: 16px;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            font-size: 12px;
+        }
     }
  
     figure{
@@ -47,15 +60,38 @@ header {
         width: 30%;
         display: flex;
         align-items: center;
+        @media (max-width:650px){
+            border: solid black;
+            width: 40vw;
+    }
+
+        img{
+            @media (max-width:900px){
+                border: solid 2px gray;
+                width: 10vw;
+            }
+            @media (max-width:650px){
+                border: solid black;
+                width: 10vw;
+            }
+        }
+
     }
 
     figcaption{
         font-weight: 400;
         color: #E4EEF1;
-        font-size: 28px
+        font-size: 28px;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            font-size: 16px;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            font-size: 12px;
+        }
     }
-
-//estilização da main
+// -------------------MAIN----------------------------
 
 .firstConteiner{
     background-color: #FFD9EC;
@@ -63,19 +99,43 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    img{
-        height: 95%;
+    @media (max-width:650px){
+        border: solid black;
     }
+    img{
+        width: 40vh ;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            width: 30vw;
+        }
+        @media (max-width:700px){
+            border: solid black;
+            width: 30vw;
+        }
+    }
+    
+
 }
 
 .boxP{
     // border: solid green;
     width: 42%;
-
+@media (max-width:900px){
+    border: solid 2px gray;
+    width: 40%;
+}
     p{
         font-weight: 400;
         font-size: 25px;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            font-size: 16px;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            font-size: 12px;
+            width: 50vw;
+        }
     }
 }
 
@@ -85,14 +145,34 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width:650px){
+        border: solid black;
+    }
 
     p{
         color:#E4EEF1;
         font-weight: 400;
         font-size: 25px;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            font-size: 16px;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            font-size: 12px;
+            width: 50vw;
+        }
     }
     img{
-        height: 95%;
+        width: 50vh;
+        @media (max-width:900px){
+            border: solid 2px gray;
+            width: 40vw;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            width: 30vw;
+        }
     }
 }
 
@@ -107,17 +187,43 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    @media (max-width:900px){
+        border: solid 2px red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35vh;
+    }
+    @media (max-width:650px){
+        border: solid black;
+    }
     div{
         // border: solid yellow;
         width: 90%;
         display: flex;
         justify-content: space-around;
+        @media (max-width:900px){
+            border: solid 2px green;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        img{
+            @media (max-width:900px){
+                border: solid 2px gray;
+                width: 15vh;
+            }
+            @media (max-width:650px){
+                border: solid black;
+                width: 15vw;
+            }
+        }
     }
 }
 
 
-// estilizando o footer
+// -------------------FOOTER----------------------------
 
 footer{
     background-color: #FF69B4;
@@ -126,6 +232,14 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:900px){
+        border: solid 2px yellow;
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width:650px){
+        border: solid black;
+    }
 
     ul{ 
     //  border: solid black;
@@ -134,11 +248,29 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        @media (max-width:650px){
+            border: solid 2px yellow;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            width: 50vw;
+        }
     }
     li{
         color: #FFD9EC;
         font-size: 1rem;
+        @media (max-width:900px){
+            border: solid 2px yellow;
+            font-size: 12px;
+
+        }
+        @media (max-width:650px){
+            border: solid black;
+            font-size: 8px;
+        }
     }
    
 }
@@ -149,13 +281,38 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+     img{
+        @media (max-width:900px){
+            border: solid 2px yellow;
+            width: 5vw;
+        }
+     }
 }
 
 .boxImg{
-    //  border: solid black;
+ border: solid black;
     width: 25%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 250px ;
-    align-items: center;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     @media (max-width:900px){
+        border: solid 2px red;
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width:650px){
+        border: solid black;
+        width: 30vw;      
+    }
+    img{
+        @media (max-width:900px){
+            border: solid 2px yellow;
+            width: 10vw;
+        }
+        @media (max-width:650px){
+            border: solid black;
+            width: 10vw;
+        }
+    }
+
 }
